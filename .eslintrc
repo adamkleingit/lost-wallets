@@ -1,0 +1,18 @@
+{
+  "extends": ["standard", "airbnb-base"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"]
+      }
+    }
+  },
+  "plugins": ["import", "promise"],
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": "off",
+    "import/prefer-default-export": "off",
+    "arrow-parens": "off",
+    "max-len": ["error", { "code": 150 }]
+  }
+}
